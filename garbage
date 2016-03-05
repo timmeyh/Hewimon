@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to add a new element to the array.</p>
+<form id="lala" action="javascript:void(0);" >
+  First name:<br>
+  <input type="text" id="namee" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  <button onclick="myFunction()">Try it</button>
+</form>
+
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits.push(document.getElementById("namee").value);
+    document.getElementById("demo").innerHTML = fruits;
+    form=document.getElementById("lala");
+    form.reset();
+
+
+
+}
+</script>
+
+</body>
+</html>
